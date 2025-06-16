@@ -31,7 +31,14 @@ export default function Navbar({ onNavigate }: NavbarProps) {
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink className="text-lg font-semibold hover:underline" href="/#projects">
+              <NavigationMenuLink
+                href="#projects"
+                className="text-lg font-semibold hover:underline cursor-pointer"
+                onClick={e => {
+                  e.preventDefault();
+                  onNavigate && onNavigate('projects');
+                }}
+              >
                 Projects
               </NavigationMenuLink>
             </NavigationMenuItem>

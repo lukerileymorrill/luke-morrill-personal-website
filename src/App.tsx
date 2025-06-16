@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/Navbar"
 import Home from "@/components/Home"
 import Contact from "@/components/Contact"
+import Projects from "@/components/Projects"
 
 function App() {
   const [page, setPage] = useState("home")
@@ -13,6 +14,7 @@ function App() {
         <Navbar onNavigate={setPage} />
         <main className="flex-1 flex flex-col items-center justify-center w-full">
           {page === "home" && <Home />}
+          {page === "projects" && <Projects />}
           {page === "contact" && <Contact />}
         </main>
       </div>

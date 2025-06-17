@@ -7,9 +7,8 @@ export default function ThirdPartyApi() {
         I integrated a variety of third-party APIs to extend our application's functionality and provide a seamless user experience. This included payment gateways, communication platforms, and analytics tools.<br /><br />
         <strong>Key Contributions:</strong>
         <ul className="list-disc list-inside text-left text-lg text-white/90 my-6 mx-auto max-w-2xl">
-          <li>Integrated payment processing with Stripe and PayPal APIs.</li>
-          <li>Connected to Slack and Twilio for real-time notifications and messaging.</li>
-          <li>Implemented Google Analytics and Mixpanel for user behavior tracking.</li>
+          <li>Integrated payment processing with Stripe and OpenAI APIs.</li>
+          <li>Connected to tools like Slack and Sentry for real-time notifications and messaging.</li>
           <li>Ensured robust error handling and graceful degradation for all integrations.</li>
           <li>Maintained up-to-date documentation for all third-party connections.</li>
         </ul>

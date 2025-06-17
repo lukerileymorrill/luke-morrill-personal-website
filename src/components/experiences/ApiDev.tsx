@@ -9,9 +9,7 @@ export default function ApiDev() {
         <ul className="list-disc list-inside text-left text-lg text-white/90 my-6 mx-auto max-w-2xl">
           <li>Designed and documented API endpoints for multiple business domains.</li>
           <li>Implemented JWT-based authentication and role-based access control.</li>
-          <li>Ensured high test coverage with automated integration and unit tests.</li>
-          <li>Worked closely with frontend and mobile teams to deliver seamless integrations.</li>
-          <li>Monitored and optimized API performance, reducing average response times by 40%.</li>
+          <li>Worked closely with frontend team to deliver seamless integrations.</li>
           <li>Established best practices for versioning, error handling, and security.</li>
         </ul>
         <strong>Impact:</strong> <br />

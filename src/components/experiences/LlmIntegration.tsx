@@ -4,11 +4,11 @@ export default function LlmIntegration() {
       <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-6">LLM Integrations</h1>
       <p className="text-xl md:text-2xl text-white mb-10 max-w-3xl">
          <br />
-        I integrated large language model (LLM) APIs to provide advanced natural language processing features in our application. This included chatbots, content generation, and semantic search.<br /><br />
+        I integrated large language model (LLM) APIs to provide advanced natural language processing features in our application.<br /><br />
         <strong>Key Contributions:</strong>
         <ul className="list-disc list-inside text-left text-lg text-white/90 my-6 mx-auto max-w-2xl">
-          <li>Integrated OpenAI and other LLM APIs for chat and content generation.</li>
-          <li>Developed semantic search and summarization features using LLMs.</li>
+          <li>Integrated OpenAI and other LLM APIs for content generation.</li>
+          <li>Developed features using LLMs.</li>
           <li>Ensured secure handling of API keys and sensitive data.</li>
           <li>Monitored usage and optimized for cost and performance.</li>
           <li>Collaborated with product and design teams to create intuitive user experiences.</li>

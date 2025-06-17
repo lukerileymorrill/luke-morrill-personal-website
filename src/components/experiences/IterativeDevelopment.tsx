@@ -4,7 +4,7 @@ export default function IterativeDevelopment() {
       <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-6">Iterative Development</h1>
       <p className="text-xl md:text-2xl text-white mb-10 max-w-3xl">
         <br />
-        I championed an iterative development approach, delivering features in small, manageable increments. This allowed for rapid feedback, continuous improvement, and timely delivery of value to users.<br /><br />
+        I was exposed to an iterative development approach, delivering features in small, manageable increments. This allowed for rapid feedback, continuous improvement, and timely delivery of value to users.<br /><br />
         <strong>Key Contributions:</strong>
         <ul className="list-disc list-inside text-left text-lg text-white/90 my-6 mx-auto max-w-2xl">
           <li>Planned and executed development sprints with clear goals and deliverables.</li>

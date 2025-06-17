@@ -28,10 +28,14 @@ const projects = [
   },
 ]
 
-export default function Projects() {
+interface ProjectsProps {
+  onReadStory?: (idx: number) => void;
+}
+
+export default function Projects({ onReadStory }: ProjectsProps) {
   return (
     <section className="flex flex-1 w-full min-w-full w-screen flex-col items-center justify-center min-h-[calc(100vh-5rem)] bg-gradient-to-b from-black to-purple-900 text-center px-4 pt-40 pb-16">
-      <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-4">Professional Learnings</h1>
+      <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-4">Professional Experiences</h1>
       <p className="text-xl md:text-2xl text-white mb-10 max-w-3xl">
         Here are six key learnings from my current role that have significantly contributed to my professional growth. Click on each card to read the detailed writeup.
       </p>
@@ -43,7 +47,11 @@ export default function Projects() {
               <CardDescription className="text-lg text-gray-700 dark:text-gray-300 mb-4">{project.description}</CardDescription>
             </CardHeader>
             <CardFooter className="mt-auto flex justify-center">
-              <Button variant="default" className="text-base font-semibold text-whitepx-6 py-2">
+              <Button
+                variant="default"
+                className="text-base text-white font-semibold px-6 py-2"
+                onClick={() => onReadStory && onReadStory(idx)}
+              >
                 Read Full Story <span className="ml-2">→</span>
               </Button>
             </CardFooter>

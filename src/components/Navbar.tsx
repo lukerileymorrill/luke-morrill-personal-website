@@ -4,6 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
+import { Home as HomeIcon } from "lucide-react"
 
 interface NavbarProps {
   onNavigate?: (page: string) => void;
@@ -15,18 +16,25 @@ export default function Navbar({ onNavigate }: NavbarProps) {
       <div className="mx-auto flex h-20 items-center justify-between px-6 w-full">
         <a
           href="#"
-          className="text-4xl font-extrabold tracking-tight hover:underline"
+          className="flex items-center text-4xl font-extrabold tracking-tight hover:underline"
           onClick={e => {
             e.preventDefault();
             onNavigate && onNavigate('home');
           }}
         >
-          Home
+          <HomeIcon className="w-10 h-10" />
         </a>
         <NavigationMenu>
           <NavigationMenuList className="flex items-center space-x-12">
             <NavigationMenuItem>
-              <NavigationMenuLink className="text-lg font-semibold hover:underline" href="/about">
+              <NavigationMenuLink
+                href="#about"
+                className="text-lg font-semibold hover:underline cursor-pointer"
+                onClick={e => {
+                  e.preventDefault();
+                  onNavigate && onNavigate('about');
+                }}
+              >
                 About
               </NavigationMenuLink>
             </NavigationMenuItem>

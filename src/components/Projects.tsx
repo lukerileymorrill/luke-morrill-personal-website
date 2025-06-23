@@ -1,30 +1,36 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import api_image from "@/assets/api_image.png"
+import aws_image from "@/assets/aws_image.png"
+import llm_image from "@/assets/llm_image.jpeg"
+import db_image from "@/assets/num3.png"
+import iterative_image from "@/assets/iterative.png"
+import third_party_image from "@/assets/third_party.jpg"
 
 const projects = [
   {
     title: "API Development",
-    description: "Developed complex RESTFUL APIs for both internal and external use.",
+    image: api_image,
   },
   {
     title: "AWS Cloud Services",
-    description: "Developed and deployed scalable and secure AWS services to support our application.",
+    image: aws_image,
   },
   {
     title: "3rd Party API Integrations",
-    description: "Integrated third-party APIs to enhance our application's functionality.",
+    image: third_party_image,
   },
   {
     title: "LLM Integrations",
-    description: "Integrated LLM APIs to enhance our application's functionality.",
+    image: llm_image,
   },
   {
     title: "Database Management",
-    description: "Managed and optimized our database to ensure efficient data storage and retrieval.",
+    image: db_image,
   },
   {
     title: "Iterative Development",
-    description: "Developed and deployed features iteratively to ensure timely delivery and continuous improvement.",
+    image: iterative_image,
   },
 ]
 
@@ -42,9 +48,13 @@ export default function Projects({ onReadStory }: ProjectsProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {projects.map((project, idx) => (
           <Card key={idx} className="flex flex-col h-full bg-white/90 dark:bg-zinc-900/80 text-black dark:text-white shadow-lg">
-            <CardHeader>
+            <CardHeader className="flex flex-col items-center">
               <CardTitle className="text-2xl font-bold text-black dark:text-white mb-2">{project.title}</CardTitle>
-              <CardDescription className="text-lg text-gray-700 dark:text-gray-300 mb-4">{project.description}</CardDescription>
+              <img
+                src={project.image}
+                alt={project.title + " image"}
+                className="w-full h-40 object-contain bg-white rounded-md mb-4 mx-auto"
+              />
             </CardHeader>
             <CardFooter className="mt-auto flex justify-center">
               <Button

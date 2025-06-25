@@ -22,7 +22,7 @@ export default function About() {
         <div className="flex-1 bg-white/10 rounded-lg p-6 shadow text-left">
           <h2 className="text-2xl font-bold text-white mb-4">Interests</h2>
           <p className="text-lg text-white/90">
-            Outside of developing, I play in guitar in a number of local bands, playing and recording across the East Coast
+            Outside of developing, I play guitar in a number of local bands, playing and recording across the DMV area and East Coast.
           </p>
         </div>
       </div>

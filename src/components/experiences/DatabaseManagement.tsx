@@ -1,21 +1,30 @@
+import db_image from "@/assets/num3.png"
+
 export default function DatabaseManagement() {
   return (
-    <section className="flex flex-1 w-full min-w-full w-screen flex-col items-center justify-center min-h-[calc(100vh-5rem)] bg-gradient-to-b from-black to-purple-900 text-center px-4 pt-20 pb-16">
-      <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-6">Database Management</h1>
-      <p className="text-xl md:text-2xl text-white mb-10 max-w-3xl">
-        <br />
-        I managed and optimized our database systems to ensure efficient data storage, retrieval, and security. My work included schema design, query optimization, and implementing backup strategies.<br /><br />
-        <strong>Key Contributions:</strong>
-        <ul className="list-disc list-inside text-left text-lg text-white/90 my-6 mx-auto max-w-2xl">
-          <li>Designed and updated database schemas for new and existing features.</li>
-          <li>Optimized slow queries and improved overall database performance.</li>
-          <li>Implemented regular backup and disaster recovery procedures.</li>
-          <li>Ensured data security and compliance with industry standards.</li>
-          <li>Collaborated with developers to troubleshoot and resolve data-related issues.</li>
-        </ul>
-        <strong>Impact:</strong> <br />
-        These efforts resulted in faster application performance, reduced downtime, and improved data integrity and security.
-      </p>
+    <section className="flex flex-1 w-full min-w-full w-screen flex-col items-center justify-center min-h-[calc(100vh-5rem)] bg-gradient-to-b from-black to-purple-900 px-4 pt-20 pb-16">
+      <div className="w-full max-w-2xl flex flex-col items-center">
+        <img
+          src={db_image}
+          alt="Database Management"
+          className="w-full h-56 object-contain bg-white rounded-md mb-8 mt-4"
+        />
+        <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-8 text-center">Database Management</h1>
+        <article className="text-white text-lg md:text-xl space-y-6 text-left bg-white/5 p-8 rounded-xl shadow-lg">
+          <p>
+            As a member of the backend team, I was responsible for designing, creating, and maintaining our database schema. We followed Ruby on Rails best practices to ensure the structure remained scalable, maintainable, and easy to iterate on as the application evolved.
+          </p>
+          <p>
+            Throughout the API development process, I frequently created new models and relationships to support feature requirements. I leveraged Rails' ActiveRecord ORM for most operations, while also writing raw SQL for more complex queries that required fine-tuned performance or precision.
+          </p>
+          <p>
+            In addition to schema design, I helped monitor and manage our database infrastructure in AWS RDS. This included tracking storage usage, increasing capacity when necessary, and ensuring the database remained performant and reliable.
+          </p>
+          <p>
+            I also supported efforts related to data security and recovery, helping to safeguard our users' information and ensure the integrity of our data systems. This experience strengthened my understanding of both day-to-day database operations and long-term data architecture strategy.
+          </p>
+        </article>
+      </div>
     </section>
   )
 } 

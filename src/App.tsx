@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/Navbar"
 import Home from "@/components/Home"
@@ -11,6 +11,17 @@ import ThirdPartyApi from "@/components/experiences/ThirdPartyApi"
 import LlmIntegration from "@/components/experiences/LlmIntegration"
 import DatabaseManagement from "@/components/experiences/DatabaseManagement"
 import IterativeDevelopment from "@/components/experiences/IterativeDevelopment"
+import { useEffect } from "react"
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
 
 function AppRoutes() {
   const navigate = useNavigate()
@@ -58,6 +69,7 @@ function App() {
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div className="min-h-screen w-full flex flex-col bg-white">
         <Router>
+          <ScrollToTop />
           <AppRoutes />
         </Router>
       </div>

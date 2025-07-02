@@ -15,7 +15,7 @@ export default function Contact() {
           LinkedIn
         </a>
         <a
-          href="mailto:lmorrill@wesleyan.edu"
+          href="mailto:lukemorrill@icloud.com"
           className="w-full px-8 py-4 rounded-md bg-gray-200 text-black font-semibold text-lg shadow hover:bg-gray-300 transition"
         >
           Email

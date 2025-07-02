@@ -10,7 +10,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <img src={terryMethod} alt="Profile" className="w-32 h-32 rounded-full object-cover mb-6" />
       <h1 className="text-6xl md:text-7xl text-white font-extrabold mb-6 mt-8">Hi, I'm Luke Morrill</h1>
       <p className="text-2xl md:text-3xl text-white mb-10">
-       I love solving complex problems and learning new skills.
+      I'm a backend engineer with 2 years of experience building scalable solutions using AI-driven approaches. I’m passionate about leveraging AI to solve complex challenges and deliver innovative code.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
         <button
@@ -23,7 +23,7 @@ export default function Home({ onNavigate }: HomeProps) {
         </button>
         <button
           type="button"
-          className="px-8 py-4 rounded-md border border-gray-300 bg-white text-white font-semibold text-lg shadow hover:bg-gray-100 transition flex items-center justify-center"
+          className="px-8 py-4 rounded-md border border-gray-300 text-white font-semibold text-lg shadow hover:bg-gray-100 transition flex items-center justify-center"
           onClick={() => onNavigate && onNavigate('contact')}
         >
           Contact Me

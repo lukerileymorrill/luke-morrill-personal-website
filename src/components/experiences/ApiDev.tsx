@@ -2,15 +2,15 @@ import api_image from "@/assets/api_image.png"
 
 export default function ApiDev() {
   return (
-    <section className="flex flex-1 w-full min-w-full w-screen flex-col items-center justify-center min-h-[calc(100vh-5rem)] bg-gradient-to-b from-black to-purple-900 px-4 pt-20 pb-16">
+    <section className="flex flex-1 w-full min-w-full w-screen flex-col items-center justify-center min-h-screen pt-20 bg-gradient-to-b from-black to-purple-900 px-2 sm:px-4 pb-16">
       <div className="w-full max-w-2xl flex flex-col items-center">
         <img
           src={api_image}
           alt="API Development"
-          className="w-full h-56 object-contain bg-white rounded-md mb-8 mt-4"
+          className="w-full h-40 sm:h-56 object-contain bg-white rounded-md mb-6 sm:mb-8"
         />
-        <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-8 text-center">API Development</h1>
-        <article className="text-white text-lg md:text-xl space-y-6 text-left bg-white/5 p-8 rounded-xl shadow-lg">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 sm:mb-8 text-center">API Development</h1>
+        <article className="text-white text-base sm:text-lg md:text-xl space-y-4 sm:space-y-6 text-left bg-white/5 p-4 sm:p-8 rounded-xl shadow-lg">
           <p>
             When I joined my current company, my previous experience had been limited to small programs built during internships, with little exposure to API development. However, I quickly transitioned into a fast-paced, iterative cycle of API design and implementation.
           </p>

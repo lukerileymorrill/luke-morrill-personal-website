@@ -11,13 +11,13 @@ export default function Contact() {
             href="https://www.linkedin.com/in/luke-morrill-bb0027193/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full px-8 py-4 rounded-md bg-black text-white font-semibold text-lg shadow hover:bg-blue-800 transition"
+            className="w-full px-8 py-4 rounded-md bg-black text-white font-semibold text-lg shadow hover:bg-gray-900 transition"
           >
             LinkedIn
           </a>
           <a
             href="mailto:lukemorrill@icloud.com"
-            className="w-full px-8 py-4 rounded-md bg-white text-black font-semibold text-lg shadow hover:bg-gray-200 transition"
+            className="w-full px-8 py-4 rounded-md bg-white text-black font-semibold text-lg shadow hover:bg-gray-800 transition"
           >
             Email
           </a>

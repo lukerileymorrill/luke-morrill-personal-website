@@ -48,9 +48,9 @@ export default function Projects({ onReadStory }: ProjectsProps) {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {projects.map((project, idx) => (
-            <Card key={idx} className="flex flex-col h-full bg-white/90 dark:bg-zinc-900/80 text-black dark:text-white shadow-lg">
+            <Card key={idx} className="flex flex-col h-full bg-black/90 text-white shadow-lg">
               <CardHeader className="flex flex-col items-center">
-                <CardTitle className="text-2xl font-bold text-black dark:text-white mb-2">{project.title}</CardTitle>
+                <CardTitle className="text-2xl font-bold text-white mb-2">{project.title}</CardTitle>
                 <img
                   src={project.image}
                   alt={project.title + " image"}
@@ -60,7 +60,8 @@ export default function Projects({ onReadStory }: ProjectsProps) {
               <CardFooter className="mt-auto flex justify-center">
                 <Button
                   variant="default"
-                  className="text-base text-white font-semibold px-6 py-2 bg-black hover:bg-purple-700"
+                  className="text-base font-semibold px-6 py-2 hover:bg-purple-700"
+                  style={{ backgroundColor: '#1a1a1a', color: '#ffffff' }}
                   onClick={() => onReadStory && onReadStory(idx)}
                 >
                   Read Full Story <span className="ml-2">→</span>

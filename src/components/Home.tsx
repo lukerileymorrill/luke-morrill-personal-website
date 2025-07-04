@@ -16,7 +16,8 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
           <button
             type="button"
-            className="px-8 py-4 rounded-md bg-black text-white font-semibold text-lg shadow hover:bg-gray-900 transition flex items-center justify-center gap-2"
+            className="px-8 py-4 rounded-md font-semibold text-lg shadow transition flex items-center justify-center gap-2 border border-gray-700"
+            style={{ backgroundColor: '#000000', color: '#ffffff' }}
             onClick={() => onNavigate && onNavigate('projects')}
           >
             View My Work
@@ -24,7 +25,8 @@ export default function Home({ onNavigate }: HomeProps) {
           </button>
           <button
             type="button"
-            className="px-8 py-4 rounded-md bg-black text-white font-semibold text-lg shadow hover:bg-purple-700 transition flex items-center justify-center"
+            className="px-8 py-4 rounded-md font-semibold text-lg shadow transition flex items-center justify-center border border-gray-700"
+            style={{ backgroundColor: '#000000', color: '#ffffff' }}
             onClick={() => onNavigate && onNavigate('contact')}
           >
             Contact Me
